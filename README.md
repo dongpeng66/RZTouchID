@@ -6,9 +6,10 @@ RZTouchID指纹密码验证
 #添加RZTouchID.h</br>
 #示例代码:</br>
 
+
+
     RZTouchID *touchID = [[RZTouchID alloc] init];
     [touchID RZ_showTouchIDWithDescribe:nil BlockState:^(RZTouchIDState state, NSError *error) {
-        
         if (state == RZTouchIDStateNotSupport) {    //不支持TouchID
             
             UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"当前设备不支持TouchID" message:@"请输入密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
