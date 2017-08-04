@@ -4,9 +4,9 @@ RZTouchID指纹密码验证
 #usage</br>
 #把RZTouchID文件夹导入项目中</br>
 #添加RZTouchID.h</br>
-#示例代码:
-RZTouchID *touchID = [[RZTouchID alloc] init];
-    
+#示例代码:</br>
+
+    RZTouchID *touchID = [[RZTouchID alloc] init];
     [touchID RZ_showTouchIDWithDescribe:nil BlockState:^(RZTouchIDState state, NSError *error) {
         
         if (state == RZTouchIDStateNotSupport) {    //不支持TouchID
