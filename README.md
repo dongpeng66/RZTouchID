@@ -8,7 +8,7 @@ RZTouchID指纹密码验证
 
 
 
-    RZTouchID *touchID = [[RZTouchID alloc] init];
+    ###RZTouchID *touchID = [[RZTouchID alloc] init];
     [touchID RZ_showTouchIDWithDescribe:nil BlockState:^(RZTouchIDState state, NSError *error) {
         if (state == RZTouchIDStateNotSupport) {    //不支持TouchID
             
@@ -36,4 +36,4 @@ RZTouchID指纹密码验证
         
         
         
-    }];
+    }];###
