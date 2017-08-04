@@ -8,8 +8,8 @@ RZTouchID指纹密码验证
 
     `<RZTouchID *touchID = [[RZTouchID alloc] init]; >`
     </br>
-    [touchID RZ_showTouchIDWithDescribe:nil BlockState:^(RZTouchIDState state, NSError *error) {
-        if (state == RZTouchIDStateNotSupport) {    //不支持TouchID
+    [touchID RZ_showTouchIDWithDescribe:nil BlockState:^(RZTouchIDState state, NSError *error) { </br>
+        if (state == RZTouchIDStateNotSupport) {    //不支持TouchID </br>
             
             UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"当前设备不支持TouchID" message:@"请输入密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             alertview.alertViewStyle = UIAlertViewStyleSecureTextInput;
