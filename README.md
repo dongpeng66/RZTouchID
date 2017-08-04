@@ -6,7 +6,7 @@ RZTouchID指纹密码验证
 #添加RZTouchID.h</br>
 #示例代码:</br>
 `<
-    RZTouchID *touchID = [[RZTouchID alloc] init];
+    `<RZTouchID *touchID = [[RZTouchID alloc] init]; >`
     [touchID RZ_showTouchIDWithDescribe:nil BlockState:^(RZTouchIDState state, NSError *error) {
         if (state == RZTouchIDStateNotSupport) {    //不支持TouchID
             
